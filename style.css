@@ -6,9 +6,7 @@
 :root {
   --main-hover-color: hsl(75, 94%, 57%);
   --font-color: hsl(0, 0%, 100%);
-  /* - Grey 700: hsl(0, 0%, 20%)
-- Grey 800: hsl(0, 0%, 12%)
-- Grey 900: hsl(0, 0%, 8%) */
+--transition: .8s .1s all ease-in-out;
 }
 
 /* global style */
@@ -49,4 +47,21 @@ border-radius: 50%;
 }
 h4{
     color: var(--main-hover-color);
+}
+span{
+    font-weight:200 ;
+}
+li{
+    background-color: hsl(0, 0%, 20%) ;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 7px;
+    transition: var(--transition);
+}
+li:hover{
+    color: black;
+    background-color: var(--main-hover-color);
+    cursor: pointer;
+    font-weight: 500;
+ transform: scale(1.1);
 }
